@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Key event</title>
+<script>
+function whatKeyDown(e) {
+	let str = "";
+	let div = document.querySelector("#div");
+	div.innerHTML = "";
+	str += "e.key = " + e.key + "<br>";
+	str += "e.code = " + e.code + "<br>";
+	div.innerHTML = str;
+}
+</script>
+
+</head>
+<body>
+<h3>key listener와 key event 객체의 property</h3>
+<hr>
+텍스트 창에 키를 눌러보세요. alt , shift, ctrl 키도 가능<br>
+<input type="text" id="text" onkeydown="whatKeyDown(event)">
+<div id="div" style="backgroun-color:skyblue; width:250px; height:50px"></div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>마우스 클릭 연습</title>
+
+
+<style>
+ 	body { background-color:lightskyblue;} 
+	img { width: 50px; height: 50px;}
+	table { border: 3px solid LightPink; border-collapse: collapse;}
+	td { border: 3px solid LightPink; width: 50px; height: 50px; padding: 0px;}
+
+</style>
+
+
+<script>
+	let select=0;
+	
+		let img = new Image();
+		img.src="media/coco.jpg";
+		
+		function set() {
+			for (let i=0; i<100; i++) {
+				document.images[i].onclick=moveImage;
+				document.images[i].style.visibility = "hidden";
+			}
+			moveImage();
+		}
+		
+		function moveImage() {
+			document.images[select].src="";
+			document.images[select].style.visibility = "hidden";
+			select = Math.floor(Math.random() * 100);
+			document.images[select].src = img.src;
+			document.images[select].style.visibility = "visible"
+		}	
+</script>
+</head>
+
+<body onload="set()">
+	<h1> 마우스 클릭 연습 </h1>
+	<hr>
+	<br>
+	<br>
+	<table>
+		<tbody> 
+			<!-- 1st tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 2nd tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 3rd tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 4th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 5th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src="media/coco.jpg" style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 6th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 7th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 8th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 9th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+			<!-- 10th tr-->
+			<tr>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+				<td><img src(unknown) style="visibility: hiddden;"></td>
+			</tr>
+			
+			
+		</tbody>
+	</table>
+
+</body> 
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+10 * 10 
+<img src=""> 
+<body onload="    ">
+document.images[]
+document.images[i].src="coco.png"
+
+-->
+

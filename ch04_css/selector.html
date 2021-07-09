@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Selector</title>
+
+<style>
+	h3, li {color:pink;}
+	/* 여러 tags 는 , 으로 */
+	.warning {color:red;}
+	/*    . ==> class 로 인식  */
+	div.main {background: aliceblue;}
+	/* same class(2)  => specific tag 지정 */
+	#list {background:mistyrose;}
+	/* #id => id 찾아가기  */
+	div > strong {color:dodgerblue;}
+	/* 직계자손 */
+	ul strong {color: dodgerblue;}
+	/* 직계x */
+	input[type=text] {color:red;}
+	/* 입력란 text가 red로 */
+	
+	/* 가상class = 동작 === document 참조 */
+	li:hover {background:yellowgreen;}
+	/*  mouse가 올라갈때 green 오르 */
+	
+	h3:first-letter {color: black;}
+	
+</style>
+
+</head>
+
+
+<body class="main">
+<h3>Web Programming</h3>
+<hr>
+	<div>
+		<div class="main">2nd Semester <strong>Curriculum</strong></div>
+		
+		<ul id="list">
+			<li> HTML5</li>
+			<li> <strong>JAVA</strong></li>
+			<li> JAVASCRIPT</li>
+		</ul>
+		<div class="warning">Fail : below 60 </div>
+		
+		<br>
+		<form> 
+		이름 : <input type="text" value=""><br> 
+		암호 : <input type="password" value="" maxlength="4"><br>
+		자소서 : <textarea cols="20" rows="5">이곳에 자소개 작성 </textarea>>
+		</form>
+		
+	</div>
+
+</body>
+</html>

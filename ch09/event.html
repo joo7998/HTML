@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event 객체 전달받기</title>
+</head>
+<body>
+<p id="p">마우스 올리면 색 변경</p>
+<button onclick="f(event)">Click Here</button>
+
+<script>
+function f(e) { // e는 현재 발생한 이벤트 객체
+	alert(e.type); // 이벤트 종류 출력
+	
+}
+
+document.querySelector("#p").onmouseover = f;
+</script>
+</body>
+</html>

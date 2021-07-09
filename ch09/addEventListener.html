@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>addEventListener() 이용한 listener 등록</title>
+<script>
+let p;
+function init() { //문서가 완전히 로드 되었을 때 호출
+	p = document.querySelector("#p");
+	p.addEventListener("mouseover", over); //("event 이름" , 함수 이름)
+	p.addEventListener("mouseout", out) 
+	// add & remove 쉽게 (해당 이벤트에 유연하게 - 추가, 삭제 가능)
+}
+function over() {
+	p.style.backgroundColor="orchid";
+}
+function out() {
+	p.style.backgroundColor="white";
+}
+</script> 
+
+</head>
+<body onload="init()">
+<h3>addEventListener() 이용한 listener 등록</h3>
+<hr>
+<p id="p">마우스 올리면 색 변경</p>
+</body>
+</html>

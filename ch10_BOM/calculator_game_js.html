@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator_JavaScript</title>
+
+<style>
+input { width: 60px; height: 20px;}
+</style>
+
+<script>
+let flag = false;
+
+function calculate() {
+	exp.value = eval(exp.value);
+}
+
+function del() {
+	exp.value = "0";
+	flag= false;
+}
+
+function val(num) {
+	if(!flag) {
+		exp.value = "";
+		exp.value = exp.value + num;
+		flag = true;
+	}else {
+		exp.value = exp.value + num;
+	}
+}
+
+function back() {
+	exp.value = exp.value.substring(0, exp.value.length-1);
+}
+
+</script>
+
+</head>
+<body>
+<h3>Calculator</h3>
+
+<hr>
+<input type="text" value="0" id="exp" style="width:350px"><br>&emsp;
+
+<input type="button" value="BACK" onclick="back()">&emsp;
+<input type="button" value="CE" onclick="del()">&emsp;
+<input type="button" value="C" onclick="del()">&emsp;
+<input type="button" value="+" onclick="val('+')"><br>&emsp;
+
+<input type="button" value="7" onclick="val('7')">&emsp;
+<input type="button" value="8" onclick="val('8')">&emsp;
+<input type="button" value="9" onclick="val('9')">&emsp;
+<input type="button" value="-" onclick="val('-')"><br>&emsp;
+
+<input type="button" value="4" onclick="val('4')">&emsp;
+<input type="button" value="5" onclick="val('5')">&emsp;
+<input type="button" value="6" onclick="val('6')">&emsp;
+<input type="button" value="*" onclick="val('*')"><br>&emsp;
+
+<input type="button" value="1" onclick="val('1')">&emsp;
+<input type="button" value="2" onclick="val('2')">&emsp;
+<input type="button" value="3" onclick="val('3')">&emsp;
+<input type="button" value="/" onclick="val('/')"><br>&emsp;
+
+<input type="button" value="0" onclick="val('0')">&emsp;
+<input type="button" value="N/A">&emsp;
+<input type="button" value="N/A">&emsp;
+<input type="button" value="=" onclick="calculate()"><br>&emsp;
+
+
+</body>
+</html>
+
+
+
+
+<!-- https://kkk-kkk.tistory.com/entry/%EC%8B%A4%EC%8A%B5%EB%AC%B8%EC%A0%9C-9-10-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0?category=760482 -->
